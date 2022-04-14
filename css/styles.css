@@ -361,9 +361,6 @@ align-items: center;
     background-color: var(--accent-text-color);
 }
 
-.project-cards {
-    
-}
 
 .project-card-item {
     background: var(--primary-bg-color);
