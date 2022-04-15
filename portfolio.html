@@ -24,23 +24,31 @@
     <header class="header">
       <div class="container">
         <nav class="header-navigation">
-          <a href="" class="logo link">Web<span class="header-logo-part">Studio</span> </a>
+          <a href="" class="header-logo logo link"
+            >Web<span class="header-logo-part">Studio</span>
+          </a>
 
           <ul class="navigation-list list">
-            <li><a class="navigation-item link nav" href="./index.html">Студия</a></li>
-            <li>
-              <a class="current navigation-item link nav" href="./portfolio.html">Портфолио</a>
+            <li class="navigation-item">
+              <a class="navigation-link link nav" href="./index.html">Студия</a>
             </li>
-            <li><a class="navigation-item link nav" href="">Контакты</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link current link nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link nav" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li>
-            <a class="contacts-mail link nav" href="mailto:info@devstudio.com"
+          <li class="contacts-item">
+            <a class="contacts-link link nav" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li><a class="contacts-tel link nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contacts-item">
+            <a class="contacts-link link nav" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -49,16 +57,24 @@
         <div class="container">
           <h1 class="visually-hidden">Наши проекты</h1>
           <ul class="filters list">
-            <li><button type="button" class="filters-btn btn">Все</button></li>
-            <li><button type="button" class="filters-btn btn">Веб-сайты</button></li>
-            <li><button type="button" class="filters-btn btn">Приложения</button></li>
-            <li><button type="button" class="filters-btn btn">Дизайн</button></li>
-            <li><button type="button" class="filters-btn btn">Маркетинг</button></li>
+            <li class="filters-item"><button type="button" class="filters-btn btn">Все</button></li>
+            <li class="filters-item">
+              <button type="button" class="filters-btn btn">Веб-сайты</button>
+            </li>
+            <li class="filters-item">
+              <button type="button" class="filters-btn btn">Приложения</button>
+            </li>
+            <li class="filters-item">
+              <button type="button" class="filters-btn btn">Дизайн</button>
+            </li>
+            <li class="filters-item">
+              <button type="button" class="filters-btn btn">Маркетинг</button>
+            </li>
           </ul>
         </div>
         <div class="container">
           <ul class="project-cards list">
-            <li class="project-card-item">
+            <li class="project-card">
               <a class="link" href="">
                 <img
                   src="./images/portfolio/technokryak.jpg"
@@ -176,10 +192,16 @@
       <div class="container">
         <a href="" class="logo link">Web<span class="footer-logo-part">Studio</span></a>
         <address class="address">
-          <ul class="list">
-            <li><a href="" class="footer-address link"> г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a class="footer-mail link" href="mailto:info@example.com">info@example.com</a></li>
-            <li><a class="footer-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="adress-list list">
+            <li class="footer-adress-item">
+              <a href="" class="footer-address link"> г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="footer-adress-item">
+              <a class="footer-contacts link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer-adress-item">
+              <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>

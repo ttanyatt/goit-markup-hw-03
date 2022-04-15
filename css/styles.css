@@ -40,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    outline: 2px dashed tomato;
+    /* outline: 2px dashed tomato; */
 }
 
 .visually-hidden {
@@ -75,17 +75,8 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
-
-/* hr {
-    position: absolute;
-    width: 1600px;
-    height: 0px;
-    left: 0px;
-    top: 80px;
-    border: 1px solid #ECECEC;
-    
-} */
 
 .header .container {
     display: flex;
@@ -284,11 +275,16 @@ align-items: center;
 .team-card {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
+    height: 368px;
+    border-radius: 0px 0px 4px 4px;
 
     background-color: var(--primary-bg-color);
 }
 
 .team-card-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -320,32 +316,51 @@ align-items: center;
     max-width: 231px;
 }
 
+.adress-list{
+margin-top: 20px;
+}
+
+.footer-adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .footer-address {
     color: var(--footer-address-color);
 }
 
-.footer-mail,
-.footer-tel {
+.footer-contacts {
     
     color: var(--footer-contacts-color);
 }
 
-.footer-mail:hover,
-.footer-tel:hover,
-.footer-mail:focus,
-.footer-tel:focus {
+.footer-contacts:hover,
+.footer-contacts:focus {
     color: var(--accent-text-color);
 }
 
 /*----------------------PORTFOLIO MAIN-----------------------*/
 
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*----------------------FILTERS PORTFOLIO-----------------------*/
+
 .filters {
-    margin-top: 92px;
-    padding-bottom: 16px;
-    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filters-btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -361,14 +376,28 @@ align-items: center;
     background-color: var(--accent-text-color);
 }
 
+/*----------------------PROJECTS PORTFOLIO-----------------------*/
 
-.project-card-item {
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.project-card {
+    height: 404px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
     background: var(--primary-bg-color);
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 
 .project-card-title {
+    margin: 20px 24px 4px 24px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -376,6 +405,9 @@ align-items: center;
 }
 
 .project-card-text {
+    margin-left: 24px;
+    margin-right: 24px;
+
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
