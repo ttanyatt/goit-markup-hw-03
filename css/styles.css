@@ -40,7 +40,6 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    /* outline: 2px dashed tomato; */
 }
 
 .visually-hidden {
@@ -71,23 +70,21 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     border: none;
 }
 
-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .images {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 /*----------------------HEADER-----------------------*/
 
 .header {
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -125,8 +122,7 @@ align-items: center;
 }
 
 .navigation-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0px;
 }
 
 .navigation-item:not(:last-child) {
@@ -330,7 +326,7 @@ align-items: center;
     max-width: 231px;
 }
 
-.adress-list{
+.address-list{
 margin-top: 20px;
 }
 
@@ -383,7 +379,7 @@ margin-top: 20px;
     background-color: var(--accent-text-color);
 }
 
-/*----------------------PROJECTS PORTFOLIO-----------------------*/
+/*---------------------- PORTFOLIO-----------------------*/
 
 .project-cards {
     display: flex;
@@ -393,24 +389,26 @@ margin-top: 20px;
 }
 
 .project-card-content {
-    margin-bottom: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE; 
 }
 
 .project-card {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+    box-sizing: border-box;
 
     background: var(--primary-bg-color);
-    border-bottom: 1px solid #EEEEEE;
-    box-sizing: border-box;
 }
 
-
-
-
 .project-card-title {
-    /* margin: 20px 24px 4px 24px; */
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -418,9 +416,6 @@ margin-top: 20px;
 }
 
 .project-card-text {
-    margin-left: 24px;
-    margin-right: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
